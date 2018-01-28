@@ -1,0 +1,19 @@
+server:
+    port: ${PORT:8761}
+security:
+  basic:
+    enabled: false
+
+logging:
+  level:
+    com:
+      netflix:
+        eureka: OFF
+        discovery: OFF
+
+eureka:
+    client:
+      registerWithEureka: false
+      fetchRegistry: false
+    server:
+      waitTimeInMsWhenSyncEmpty: 0

@@ -1,0 +1,14 @@
+eureka:
+  instance:
+    metadataMap:
+      akkaClusterName: mycluster
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+server:
+  port: 8910
+
+spring:
+  main:
+    web-environment: false
